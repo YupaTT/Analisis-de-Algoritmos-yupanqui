@@ -1,0 +1,17 @@
+# go run h1/reporte_actual.go -n N  (reporte de un mes, todas las sucursales, 8.000 productos; 1 calentamiento + 3 corridas)
+corrida 1: 63.418211ms
+corrida 2: 62.485124ms
+corrida 3: 65.995231ms
+promedio con 30000 líneas: 63.966188ms
+corrida 1: 117.980904ms
+corrida 2: 119.311249ms
+corrida 3: 115.096788ms
+promedio con 60000 líneas: 117.46298ms
+corrida 1: 237.406833ms
+corrida 2: 235.549252ms
+corrida 3: 224.288035ms
+promedio con 120000 líneas: 232.414706ms
+corrida 1: 437.628932ms
+corrida 2: 454.828026ms
+corrida 3: 438.121597ms
+promedio con 240000 líneas: 443.526185ms
