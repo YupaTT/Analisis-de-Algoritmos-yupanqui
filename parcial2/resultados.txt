@@ -1,0 +1,37 @@
+Gonzalo Yupanqui Torrez
+Ingenuo:  11 de 11 pasos correctos
+Mejorado: 11 de 11 pasos correctos
+
+Medición ingenuo
+   n=10000 calentamiento: 422.13 ms
+   n=10000 corrida 1: 474.02 ms
+   n=10000 corrida 2: 358.28 ms
+   n=10000 corrida 3: 378.19 ms
+   n=10000 promedio 403.50 ms
+   n=20000 calentamiento: 1173.23 ms
+   n=20000 corrida 1: 1118.10 ms
+   n=20000 corrida 2: 800.60 ms
+   n=20000 corrida 3: 1114.60 ms
+   n=20000 promedio 1011.10 ms (x2.51)
+   n=40000 calentamiento: 5993.06 ms
+   n=40000 corrida 1: 3815.90 ms
+   n=40000 corrida 2: 3710.23 ms
+   n=40000 corrida 3: 3574.81 ms
+   n=40000 promedio 3700.32 ms (x3.66)
+
+Medición mejorado
+   n=10000 calentamiento: 9.03 ms
+   n=10000 corrida 1: 8.76 ms
+   n=10000 corrida 2: 6.59 ms
+   n=10000 corrida 3: 10.61 ms
+   n=10000 promedio 8.65 ms
+   n=20000 calentamiento: 19.30 ms
+   n=20000 corrida 1: 12.23 ms
+   n=20000 corrida 2: 15.20 ms
+   n=20000 corrida 3: 17.97 ms
+   n=20000 promedio 15.13 ms (x1.75)
+   n=40000 calentamiento: 34.76 ms
+   n=40000 corrida 1: 29.91 ms
+   n=40000 corrida 2: 27.32 ms
+   n=40000 corrida 3: 29.84 ms
+   n=40000 promedio 29.02 ms (x1.92)
