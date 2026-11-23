@@ -9,7 +9,8 @@ Repositorio de entregas y prácticas de la materia Análisis de Algoritmos.
 
 ## H1
 
-Tema elegido: proceso de venta y facturación directa.
+Tema elegido: generación del reporte de ventas por rango de fechas y, opcionalmente, por sucursal.
 
-- [H1 en Markdown](h1/H1.md): descripción del proceso en 13 líneas de texto.
-- [Datos de prueba en CSV](h1/datos_prueba.csv): 20 renglones de una venta simulada.
+- [H1 en Markdown](h1/H1.md): el proceso lento, quién lo sufre, volumen, tiempo actual y su O.
+- [Muestra de datos en CSV](h1/ventas_muestra.csv): 20 líneas con el formato del detalle de venta.
+- [Lógica actual](h1/reporte_actual.go) y sus [mediciones](h1/mediciones.txt).
