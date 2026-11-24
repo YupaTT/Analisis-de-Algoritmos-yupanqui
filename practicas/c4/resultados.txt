@@ -5,7 +5,3 @@ Corrida        Lineal (ms)    Binaria (ms)  Lineal / binaria
 2               689.964461        0.683260          1009.81x
 3               433.182212        0.299756          1445.12x
 Promedio        588.453523        0.461544          1274.97x
-Suma de índices: 2000000000 2000000000
-
-En H1 no ordenaría primero; reutilizaría los productos por identificador.
-Así evitaría consultas repetidas, que ordenar por sí solo no elimina.
