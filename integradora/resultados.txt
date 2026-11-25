@@ -1,0 +1,24 @@
+Gonzalo Yupanqui Torrez
+=== PRUEBAS ===
+Ingenuo: 8 de 8 pruebas correctas
+Mejorado: 8 de 8 pruebas correctas
+
+=== COMPARACIÓN DE RENDIMIENTO ===
+Ingenuo   n=20   corridas:     77.980     80.425     79.959  promedio:     79.455 ms utilidad: 742
+Mejorado  n=20   corridas:      0.033      0.029      0.024  promedio:      0.029 ms utilidad: 742
+Misma utilidad: true
+
+Ingenuo   n=22   corridas:    488.232    424.900    323.508  promedio:    412.213 ms utilidad: 572
+Mejorado  n=22   corridas:      0.055      0.053      0.546  promedio:      0.218 ms utilidad: 572
+Misma utilidad: true
+
+Ingenuo   n=24   corridas:   1677.932   1378.068   1835.620  promedio:   1630.540 ms utilidad: 806
+Mejorado  n=24   corridas:      0.094      0.050      0.054  promedio:      0.066 ms utilidad: 806
+Misma utilidad: true
+
+Ingenuo   n=26   corridas:   7240.095   7221.081   7414.129  promedio:   7291.768 ms utilidad: 821
+Mejorado  n=26   corridas:      0.049      0.051      0.050  promedio:      0.050 ms utilidad: 821
+Misma utilidad: true
+
+=== PRUEBA DE ESCALABILIDAD ===
+Mejorado  n=1000 corridas:    159.714     82.532    133.887  promedio:    125.378 ms utilidad: 35173
