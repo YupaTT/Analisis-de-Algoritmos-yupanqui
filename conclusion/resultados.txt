@@ -1,0 +1,35 @@
+Gonzalo Yupanqui Torrez
+Mismo reporte en todos los casos (todas las sucursales y sucursal 1): sí
+
+## Antes
+
+| Datos | Corrida 1 (ms) | Corrida 2 (ms) | Corrida 3 (ms) | Promedio (ms) | Veces vs fila anterior |
+| --- | ---: | ---: | ---: | ---: | ---: |
+| Un mes, 30.000 líneas | 306.96 | 306.81 | 290.25 | 301.34 | — |
+| Un mes, 60.000 líneas | 449.71 | 447.34 | 356.84 | 417.96 | x1.39 |
+| Un mes, 120.000 líneas | 786.89 | 1041.96 | 763.62 | 864.16 | x2.07 |
+| Un mes, 240.000 líneas | 1982.44 | 2441.74 | 1744.27 | 2056.15 | x2.38 |
+| Un año, reporte de octubre | 1284.14 | 1049.01 | 810.39 | 1047.85 | — |
+| Un año, reporte del año | 10519.02 | 12327.48 | 10608.88 | 11151.79 | — |
+
+## Después
+
+| Datos | Corrida 1 (ms) | Corrida 2 (ms) | Corrida 3 (ms) | Promedio (ms) | Veces vs fila anterior |
+| --- | ---: | ---: | ---: | ---: | ---: |
+| Un mes, 30.000 líneas | 17.93 | 20.52 | 24.99 | 21.15 | — |
+| Un mes, 60.000 líneas | 16.44 | 14.89 | 14.33 | 15.22 | x0.72 |
+| Un mes, 120.000 líneas | 9.05 | 8.70 | 8.70 | 8.82 | x0.58 |
+| Un mes, 240.000 líneas | 27.53 | 28.68 | 28.37 | 28.19 | x3.20 |
+| Un año, reporte de octubre | 10.62 | 10.49 | 11.67 | 10.93 | — |
+| Un año, reporte del año | 57.88 | 48.89 | 48.45 | 51.74 | — |
+
+## Resumen
+
+| Datos | Antes (ms) | Después (ms) | Veces más rápido | Ordenar por fecha al cargar (ms) |
+| --- | ---: | ---: | ---: | ---: |
+| Un mes, 30.000 líneas | 301.34 | 21.15 | x14 | 44.65 |
+| Un mes, 60.000 líneas | 417.96 | 15.22 | x27 | 183.47 |
+| Un mes, 120.000 líneas | 864.16 | 8.82 | x98 | 132.69 |
+| Un mes, 240.000 líneas | 2056.15 | 28.19 | x73 | 436.62 |
+| Un año, reporte de octubre | 1047.85 | 10.93 | x96 | 3952.22 |
+| Un año, reporte del año | 11151.79 | 51.74 | x216 | 3477.93 |
