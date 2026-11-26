@@ -1,0 +1,20 @@
+
+Fuerza bruta
+
+| Meses | Corrida 1 (ms) | Corrida 2 (ms) | Corrida 3 (ms) | Promedio (ms) | Veces más |
+| ---: | ---: | ---: | ---: | ---: | ---: |
+| 6 | 0.805 | 0.665 | 0.641 | 0.704 | — |
+| 12 | 3.149 | 3.499 | 3.524 | 3.390 | 4.82 |
+| 24 | 22.176 | 19.747 | 24.650 | 22.191 | 6.55 |
+| 48 | 199.848 | 193.409 | 167.324 | 186.860 | 8.42 |
+
+Programación dinámica
+
+| Meses | Corrida 1 (ms) | Corrida 2 (ms) | Corrida 3 (ms) | Promedio (ms) | Veces más |
+| ---: | ---: | ---: | ---: | ---: | ---: |
+| 6 | 0.052 | 0.052 | 0.041 | 0.048 | — |
+| 12 | 0.098 | 0.108 | 0.105 | 0.104 | 2.15 |
+| 24 | 0.141 | 0.143 | 0.183 | 0.156 | 1.50 |
+| 48 | 0.702 | 0.717 | 0.771 | 0.730 | 4.70 |
+
+Las dos versiones dieron la misma mejor racha en las 3 sucursales.

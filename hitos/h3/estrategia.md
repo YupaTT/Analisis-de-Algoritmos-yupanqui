@@ -9,6 +9,8 @@ El reporte de ventas del [H1](../../h1/H1.md) se puede sacar por **mes** y por *
 
 Hay **3 sucursales**.
 
+El reporte del H1 (filtrar, sumar y ordenar) no es un problema de optimización; por eso tomo una pregunta del mismo caso: la mejor racha de crecimiento.
+
 ## ¿Sirve el voraz? No
 
 El voraz elige lo que parece mejor en el momento: toma el mejor mes y solo agranda el rango si la suma sube.
@@ -24,6 +26,8 @@ Ejemplo de una sucursal:
 - **Mejor opción:** enero a marzo: 6 − 1 + 5 = **+10** (las ventas pasaron de 100 a 110).
 
 Para llegar a marzo había que aceptar primero un mes malo. El voraz no lo acepta, así que no llega al óptimo.
+
+Tampoco deja el mismo problema más chico: después de elegir enero, lo que queda no es «la mejor racha del resto», porque la racha tiene que seguir pegada a enero.
 
 ## ¿Sirve la programación dinámica? Sí
 

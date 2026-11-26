@@ -29,7 +29,7 @@ Reordenar el listado está permitido por estas opciones; duplicarlo no.
 Así se respeta la memoria limitada y se evita el costo cuadrático inicial.
 
 En [P1.2](medicion.md), con 80.000 datos, comparar pares promedió
-**4418,495012 ms** y la cura basada en ordenar **19,686146 ms**: unas 224 veces
+**2783,75 ms** y la cura basada en ordenar **13,65 ms**: unas 204 veces
 menos tiempo. La diferencia y el crecimiento observado apoyan preferir
 n log n frente a n² cuando aumenta n. Es evidencia sobre esas dos funciones,
 no una medición de Heapsort ni de las 8.000 consultas; no convierto esos tiempos

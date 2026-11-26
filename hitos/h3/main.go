@@ -37,8 +37,8 @@ func dinamica(rend []int) int {
 	return mejor
 }
 
-// medir: 1 calentamiento y 3 corridas; devuelve el promedio en ms.
-func medir(resolver func([]int) int, datos [][]int) float64 {
+// medir: 1 calentamiento y 3 corridas; devuelve los 3 tiempos en ms.
+func medir(resolver func([]int) int, datos [][]int) [3]float64 {
 	consultar := func() {
 		for i := 0; i < consultas; i++ {
 			for _, rend := range datos {
@@ -47,22 +47,36 @@ func medir(resolver func([]int) int, datos [][]int) float64 {
 		}
 	}
 	consultar() // calentamiento
-	total := 0.0
-	for i := 0; i < 3; i++ {
+	var t [3]float64
+	for i := range t {
 		inicio := time.Now()
 		consultar()
-		total += time.Since(inicio).Seconds() * 1000
+		t[i] = time.Since(inicio).Seconds() * 1000
 	}
-	return total / 3
+	return t
+}
+
+func tabla(titulo string, meses []int, tiempos [][3]float64) {
+	fmt.Printf("\n%s\n\n", titulo)
+	fmt.Println("| Meses | Corrida 1 (ms) | Corrida 2 (ms) | Corrida 3 (ms) | Promedio (ms) | Veces más |")
+	fmt.Println("| ---: | ---: | ---: | ---: | ---: | ---: |")
+	anterior := 0.0
+	for i, t := range tiempos {
+		prom := (t[0] + t[1] + t[2]) / 3
+		veces := "—"
+		if anterior > 0 {
+			veces = fmt.Sprintf("%.2f", prom/anterior)
+		}
+		fmt.Printf("| %d | %.3f | %.3f | %.3f | %.3f | %s |\n", meses[i], t[0], t[1], t[2], prom, veces)
+		anterior = prom
+	}
 }
 
 func main() {
 	r := rand.New(rand.NewSource(42))
-	fmt.Println("| Meses | Fuerza bruta (ms) | Veces más | Dinámica (ms) | Veces más |")
-	fmt.Println("| ---: | ---: | ---: | ---: | ---: |")
-
-	antBruta, antDinamica := 0.0, 0.0
-	for _, meses := range []int{6, 12, 24, 48} {
+	todos := []int{6, 12, 24, 48}
+	var bruta, dina [][3]float64
+	for _, meses := range todos {
 		datos := make([][]int, sucursales)
 		for s := range datos {
 			datos[s] = make([]int, meses)
@@ -77,14 +91,10 @@ func main() {
 			}
 		}
 
-		bruta := medir(fuerzaBruta, datos)
-		dina := medir(dinamica, datos)
-		if antBruta == 0 {
-			fmt.Printf("| %d | %.3f | — | %.3f | — |\n", meses, bruta, dina)
-		} else {
-			fmt.Printf("| %d | %.3f | %.2f | %.3f | %.2f |\n", meses, bruta, bruta/antBruta, dina, dina/antDinamica)
-		}
-		antBruta, antDinamica = bruta, dina
+		bruta = append(bruta, medir(fuerzaBruta, datos))
+		dina = append(dina, medir(dinamica, datos))
 	}
+	tabla("Fuerza bruta", todos, bruta)
+	tabla("Programación dinámica", todos, dina)
 	fmt.Println("\nLas dos versiones dieron la misma mejor racha en las 3 sucursales.")
 }

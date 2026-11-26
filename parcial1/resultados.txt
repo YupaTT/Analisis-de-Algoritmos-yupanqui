@@ -1,0 +1,37 @@
+Gonzalo Yupanqui Torrez
+Repetido en el medio | esperado: true | lenta: true | cura: true
+Sin repetidos | esperado: false | lenta: false | cura: false
+Lista vacía | esperado: false | lenta: false | cura: false
+Un solo elemento | esperado: false | lenta: false | cura: false
+Repetido en los extremos | esperado: true | lenta: true | cura: true
+
+Cantidad: 10000
+Corrida 0: lenta 111.501384 ms | cura 1.390533 ms
+Corrida 1: lenta 101.833233 ms | cura 2.125896 ms
+Corrida 2: lenta 112.479877 ms | cura 2.109287 ms
+Corrida 3: lenta 83.349169 ms | cura 2.861473 ms
+Promedio: lenta 99.220760 ms | cura 2.365552 ms
+
+Cantidad: 20000
+Corrida 0: lenta 286.127773 ms | cura 2.397026 ms
+Corrida 1: lenta 314.015971 ms | cura 1.857436 ms
+Corrida 2: lenta 168.696457 ms | cura 2.967030 ms
+Corrida 3: lenta 207.868367 ms | cura 1.933522 ms
+Promedio: lenta 230.193598 ms | cura 2.252663 ms
+Respecto del tamaño anterior: lenta 2.320x | cura 0.952x
+
+Cantidad: 40000
+Corrida 0: lenta 885.550011 ms | cura 6.078805 ms
+Corrida 1: lenta 790.964699 ms | cura 5.634606 ms
+Corrida 2: lenta 679.111627 ms | cura 4.921346 ms
+Corrida 3: lenta 812.172436 ms | cura 4.980981 ms
+Promedio: lenta 760.749587 ms | cura 5.178978 ms
+Respecto del tamaño anterior: lenta 3.305x | cura 2.299x
+
+Cantidad: 80000
+Corrida 0: lenta 3349.268322 ms | cura 12.460669 ms
+Corrida 1: lenta 2597.699270 ms | cura 9.468726 ms
+Corrida 2: lenta 2437.972226 ms | cura 18.636905 ms
+Corrida 3: lenta 3315.582470 ms | cura 12.845361 ms
+Promedio: lenta 2783.751322 ms | cura 13.650331 ms
+Respecto del tamaño anterior: lenta 3.659x | cura 2.636x
