@@ -22,7 +22,7 @@
 
 |      n | Inserción (ms) | MergeSort (ms) | QuickSort (ms) |
 | -----: | -------------: | -------------: | -------------: |
-| 10.000 |          15,35 |           1,19 |           0,66 |
-| 80.000 |         792,53 |          10,87 |           5,46 |
+| 10.000 |          28,43 |           2,86 |           1,44 |
+| 40.000 |         511,20 |          19,35 |           9,52 |
 
-Con 10.000 datos, MergeSort es 13 veces más rápido que Inserción. QuickSort es apenas 0,5 ms más rápido, una diferencia que no compensa cambiar el orden del reporte.
+Con 10.000 datos, MergeSort es 10 veces más rápido que Inserción, y con 40.000, 26 veces. QuickSort es apenas 1,4 ms más rápido con 10.000 (unos 10 ms con 40.000), una diferencia que no compensa cambiar el orden del reporte.

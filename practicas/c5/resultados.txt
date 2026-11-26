@@ -1,7 +1,34 @@
-Torneo de ordenamientos
+Torneo de ordenamientos (1 calentamiento, 3 corridas, promedio en ms)
 
-  Cantidad   Inserción (ms)   MergeSort (ms)   QuickSort (ms)
-     10000        47.127309         0.990322         0.168521
-     20000       256.327853         3.426887         0.702519
-     40000      1370.412899         9.145732         1.779423
-     80000      3293.205414        10.012564         2.169780
+n = 5000
+Algoritmo     Corrida 1    Corrida 2    Corrida 3     Promedio    Veces
+Burbuja          22.049       27.421       25.811       25.093        —
+Inserción         6.653        7.961        6.392        7.002        —
+MergeSort         1.412        0.989        0.880        1.094        —
+QuickSort         0.591        0.596        0.561        0.583        —
+HeapSort          0.818        0.750        0.761        0.776        —
+
+n = 10000
+Algoritmo     Corrida 1    Corrida 2    Corrida 3     Promedio    Veces
+Burbuja         119.170      109.339      118.122      115.544    x4.60
+Inserción        28.276       28.549       28.452       28.426    x4.06
+MergeSort         3.792        2.568        2.232        2.864    x2.62
+QuickSort         1.430        1.362        1.536        1.442    x2.47
+HeapSort          2.317        2.166        2.092        2.192    x2.82
+
+n = 20000
+Algoritmo     Corrida 1    Corrida 2    Corrida 3     Promedio    Veces
+Burbuja         929.091      953.921     1008.493      963.835    x8.34
+Inserción       161.983      197.780      153.875      171.213    x6.02
+MergeSort         5.650        6.068        5.450        5.723    x2.00
+QuickSort         2.567        2.696        3.478        2.914    x2.02
+HeapSort          5.365        6.014        7.429        6.269    x2.86
+
+n = 40000
+Algoritmo     Corrida 1    Corrida 2    Corrida 3     Promedio    Veces
+Burbuja        5158.554     4807.671     4908.841     4958.355    x5.14
+Inserción       449.109      569.401      515.099      511.203    x2.99
+MergeSort        18.069       16.392       23.582       19.348    x3.38
+QuickSort        10.508        9.672        8.377        9.519    x3.27
+HeapSort          9.929        8.363        8.141        8.811    x1.41
+

@@ -9,6 +9,8 @@ import (
 	"practicas/c3"
 	"practicas/c4"
 	"practicas/c5"
+	"practicas/estructuras"
+	"practicas/grafos"
 )
 
 func main() {
@@ -19,6 +21,8 @@ func main() {
 		fmt.Println("1. C3 - Búsqueda binaria")
 		fmt.Println("2. C4 - Comparación medida: lineal contra binaria")
 		fmt.Println("3. C5 - Torneo de ordenamientos")
+		fmt.Println("4. Estructuras: pila, cola, lista, BST, hash y heap")
+		fmt.Println("5. Grafos: BFS y DFS")
 		fmt.Println("0. Salir")
 		fmt.Print("Elige un ejercicio: ")
 
@@ -41,6 +45,12 @@ func main() {
 		case "3":
 			fmt.Println()
 			c5.EjecutarTorneo()
+		case "4":
+			fmt.Println()
+			estructuras.EjecutarEstructuras()
+		case "5":
+			fmt.Println()
+			grafos.EjecutarGrafos()
 		case "0":
 			fmt.Println("Hasta luego.")
 			return
